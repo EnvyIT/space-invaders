@@ -1,2 +1,2 @@
-# space-invaders
-An arcade game written in C.
+# Space Invaders
+An arcade game written in C. 
