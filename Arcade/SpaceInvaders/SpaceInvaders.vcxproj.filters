@@ -15,9 +15,68 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="resources.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spaceship.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alien.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laserbeam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coordinate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="galaxy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bomb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spaceship.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="alien.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="laserbeam.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="coordinate.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="galaxy.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keycodes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bomb.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{2A84D1FF-4E5A-4EE7-B60D-57D9F8228E26}</ProjectGuid>
+    <ProjectGuid>{7C98F992-863C-4460-98C5-C9A69D26B941}</ProjectGuid>
     <RootNamespace>SpaceInvaders</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -69,17 +69,29 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Allegro_AddonImage>true</Allegro_AddonImage>
+    <Allegro_AddonTTF>true</Allegro_AddonTTF>
+    <Allegro_AddonPrimitives>true</Allegro_AddonPrimitives>
+    <Allegro_AddonAudio>true</Allegro_AddonAudio>
+    <Allegro_AddonAcodec>true</Allegro_AddonAcodec>
+    <Allegro_AddonPhysfs>true</Allegro_AddonPhysfs>
+    <Allegro_AddonDialog>true</Allegro_AddonDialog>
+    <Allegro_AddonMemfile>true</Allegro_AddonMemfile>
+    <Allegro_AddonFont>true</Allegro_AddonFont>
+    <Allegro_AddonColor>true</Allegro_AddonColor>
+    <Allegro_AddonVideo>true</Allegro_AddonVideo>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <ConformanceMode>false</ConformanceMode>
+      <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,7 +136,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="alien.c" />
+    <ClCompile Include="bomb.c" />
+    <ClCompile Include="coordinate.c" />
+    <ClCompile Include="galaxy.c" />
+    <ClCompile Include="game.c" />
+    <ClCompile Include="laserbeam.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="resources.c" />
+    <ClCompile Include="spaceship.c" />
+    <ClCompile Include="utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="alien.h" />
+    <ClInclude Include="bomb.h" />
+    <ClInclude Include="coordinate.h" />
+    <ClInclude Include="galaxy.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="keycodes.h" />
+    <ClInclude Include="laserbeam.h" />
+    <ClInclude Include="resources.h" />
+    <ClInclude Include="spaceship.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
